@@ -13,7 +13,7 @@ dry_run = True // haqiqatdan ham o'chirishni xohlasangiz False qilib qo'ying
 batch_size = 100
 
 client = None
-ARABIC_RE = re.compile(r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]')
+ARABIC_RE = re.compile(r'[\u0600-\u06FF\u0750-\u077F\u08A0-\u08FF]') // Unicode diapazonni boshqa tillarga ham moslab olishingiz mumkin.
 
 async def create_or_load_session():
     global client
